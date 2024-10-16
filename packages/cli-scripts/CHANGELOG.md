@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 3.0.0 (2024-10-16)
+
+
+### Bug Fixes
+
+* **cli:** resolve vm2 security vulnerability ([#5070](https://github.com/slogive/ionic-cli/issues/5070)) ([4050419](https://github.com/slogive/ionic-cli/commit/4050419bef70fb92e58b0a83cd4b68b48090e596))
+* pin tslib to avoid "Cannot set property pathExists" error ([689e1f0](https://github.com/slogive/ionic-cli/commit/689e1f038b907356ef855a067a76d4822e7072a8))
+* **docs:** add name to dummy config files ([7976f29](https://github.com/slogive/ionic-cli/commit/7976f29ffd046cd0cdbea4fcc1fa2a4a9f425d2d))
+* **serve:** fix unclosed connection issue again ([#3500](https://github.com/slogive/ionic-cli/issues/3500)) ([1f0ef3b](https://github.com/slogive/ionic-cli/commit/1f0ef3b0b2bfb1e5ae5e04248bae29cf0adb50de))
+* use built-in type for process.env ([03855c4](https://github.com/slogive/ionic-cli/commit/03855c4b0a692621e100b907f5a3b7dd4351a933))
+* **docs:** ensure inputs are included ([5d0f8d7](https://github.com/slogive/ionic-cli/commit/5d0f8d7624a9771792a96e35c8a3361d1879c072))
+
+
+### chore
+
+* rename Ionic CLI package to `@ionic/cli` ([1f86b34](https://github.com/slogive/ionic-cli/commit/1f86b34dc4ebfd565c240a6b4a44f3815a18b769))
+* require Node 10 ([5a47874](https://github.com/slogive/ionic-cli/commit/5a478746c074207b6dc96aa8771f04a606deb1ef))
+* require Node 8 ([5670e68](https://github.com/slogive/ionic-cli/commit/5670e68eafb4b6ba2e60b6120e836931508c03a5))
+
+
+### Features
+
+* ionic pro ([36dc2f7](https://github.com/slogive/ionic-cli/commit/36dc2f708f473319debb7e7a9bd1cc2a23d8dae2))
+
+
+### BREAKING CHANGES
+
+* The npm package for the Ionic CLI is now `@ionic/cli`.
+* A minimum of Node.js 10.3.0 is required.
+* A minimum of Node.js 8.9.4 is required.
+
+
+
+
+
 ## [2.1.74](https://github.com/ionic-team/ionic-cli/compare/cli-scripts@2.1.73...cli-scripts@2.1.74) (2024-01-02)
 
 **Note:** Version bump only for package cli-scripts

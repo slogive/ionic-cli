@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 4.0.0 (2024-10-16)
+
+
+### Bug Fixes
+
+* **cli:** resolve vm2 security vulnerability ([#5070](https://github.com/ionic-team/ionic-cli/issues/5070)) ([4050419](https://github.com/ionic-team/ionic-cli/commit/4050419bef70fb92e58b0a83cd4b68b48090e596))
+* bump cross-spawn version to avoid windows problem ([#4784](https://github.com/ionic-team/ionic-cli/issues/4784)) ([2c88a71](https://github.com/ionic-team/ionic-cli/commit/2c88a7180e87497a27a97ca979c612d6663cbb2a))
+* pin tslib to avoid "Cannot set property pathExists" error ([689e1f0](https://github.com/ionic-team/ionic-cli/commit/689e1f038b907356ef855a067a76d4822e7072a8))
+* use native ES2022 error cause ([#5010](https://github.com/ionic-team/ionic-cli/issues/5010)) ([a97ba2b](https://github.com/ionic-team/ionic-cli/commit/a97ba2bcac4556017ba010692f71fed2bef3f77b))
+* use native ES2022 error cause ([#5010](https://github.com/ionic-team/ionic-cli/issues/5010)) ([0c4cd0f](https://github.com/ionic-team/ionic-cli/commit/0c4cd0f47e00b43e8c0ce4eef072351a846b566c))
+* **subprocess:** allow symlinks for commands found by `which` ([ce5bf80](https://github.com/ionic-team/ionic-cli/commit/ce5bf80088b0a6d1b6eaead4c69566b696bb61f7))
+* **subprocess:** check all executable extensions on windows ([#3949](https://github.com/ionic-team/ionic-cli/issues/3949)) ([e1cf74e](https://github.com/ionic-team/ionic-cli/commit/e1cf74e735601cc1f534ad4a1b6488edeadfafc8))
+* **subprocess:** check if command found by `which` is executable ([638cf61](https://github.com/ionic-team/ionic-cli/commit/638cf61655944753c4df4a258863be0627ba7ce2))
+
+
+### chore
+
+* require Node 10 ([5a47874](https://github.com/ionic-team/ionic-cli/commit/5a478746c074207b6dc96aa8771f04a606deb1ef))
+* require Node 8 ([5670e68](https://github.com/ionic-team/ionic-cli/commit/5670e68eafb4b6ba2e60b6120e836931508c03a5))
+
+
+### Features
+
+* **subprocess:** add `convertPATH` utility ([eb14e8d](https://github.com/ionic-team/ionic-cli/commit/eb14e8dba159f0068350924001a1e8f755be9bb7))
+* **subprocess:** add `findExecutables` (like `which`, but for all) ([95acb53](https://github.com/ionic-team/ionic-cli/commit/95acb53c7eb572bfc884b51c7dba535470264c63))
+* **subprocess:** options for `bashify()` ([465fafc](https://github.com/ionic-team/ionic-cli/commit/465fafc97c82b0fd3bd1f24d97d19063739d6bcb))
+
+
+### Reverts
+
+* use native ES2022 error cause ([#5060](https://github.com/ionic-team/ionic-cli/issues/5060)) ([1e64a1a](https://github.com/ionic-team/ionic-cli/commit/1e64a1ada60545adf8e7c99fbd1f8766cf2416f9))
+
+
+### BREAKING CHANGES
+
+* `message`, `stack`, and `error` properties removed from `BaseError` and `SubprocessError`
+* A minimum of Node.js 10.3.0 is required.
+* A minimum of Node.js 8.9.4 is required.
+
+
+
+
+
 ## [3.0.1](https://github.com/ionic-team/ionic-cli/compare/@ionic/utils-subprocess@3.0.0...@ionic/utils-subprocess@3.0.1) (2023-12-19)
 
 

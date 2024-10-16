@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 3.0.0 (2024-10-16)
+
+
+### Bug Fixes
+
+* **cli:** resolve vm2 security vulnerability ([#5070](https://github.com/ionic-team/ionic-cli/issues/5070)) ([4050419](https://github.com/ionic-team/ionic-cli/commit/4050419bef70fb92e58b0a83cd4b68b48090e596))
+* add signal-exit dependency in correct place ([178e5e5](https://github.com/ionic-team/ionic-cli/commit/178e5e51cdc3593e3d096a5197e1dc0e17292bbd))
+* pin tslib to avoid "Cannot set property pathExists" error ([689e1f0](https://github.com/ionic-team/ionic-cli/commit/689e1f038b907356ef855a067a76d4822e7072a8))
+* **shell:** use shell from NodeJS if available ([53d0afa](https://github.com/ionic-team/ionic-cli/commit/53d0afaea8966f7742220896a98da570c706fb63))
+* **windows:** do not check TERM for windows detection ([ac4b417](https://github.com/ionic-team/ionic-cli/commit/ac4b417385c0c7859674e2ba59e495e9abc5bce4))
+
+
+### chore
+
+* require Node 10 ([5a47874](https://github.com/ionic-team/ionic-cli/commit/5a478746c074207b6dc96aa8771f04a606deb1ef))
+* require Node 8 ([5670e68](https://github.com/ionic-team/ionic-cli/commit/5670e68eafb4b6ba2e60b6120e836931508c03a5))
+
+
+### Features
+
+* **format:** add more formatting utilities ([d30f099](https://github.com/ionic-team/ionic-cli/commit/d30f099f50df18816fb1d3064c434f1b318518a2))
+* **format:** terminal prose formatting utils ([8912348](https://github.com/ionic-team/ionic-cli/commit/8912348ca348ae6192ddfff1af88f9c9443d205d))
+* add some ansi escape codes + cursor wrapper ([edbdb57](https://github.com/ionic-team/ionic-cli/commit/edbdb572bfe2fb5710eff7e49a483c86601ba425))
+* **ci:** support GitHub Actions detection ([5646c8e](https://github.com/ionic-team/ionic-cli/commit/5646c8e083862dbf976cd6cdecabe209c0ad8cfd))
+* include path to shell in terminal info ([79480b9](https://github.com/ionic-team/ionic-cli/commit/79480b9eef0ed9c39772a60ad3828da8f851d684))
+
+
+### BREAKING CHANGES
+
+* A minimum of Node.js 10.3.0 is required.
+* A minimum of Node.js 8.9.4 is required.
+
+
+
+
+
 ## [2.3.5](https://github.com/ionic-team/ionic-cli/compare/@ionic/utils-terminal@2.3.4...@ionic/utils-terminal@2.3.5) (2023-12-19)
 
 

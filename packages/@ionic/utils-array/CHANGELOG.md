@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 3.0.0 (2024-10-16)
+
+
+### Bug Fixes
+
+* pin tslib to avoid "Cannot set property pathExists" error ([689e1f0](https://github.com/ionic-team/ionic-cli/commit/689e1f038b907356ef855a067a76d4822e7072a8))
+
+
+### chore
+
+* require Node 10 ([5a47874](https://github.com/ionic-team/ionic-cli/commit/5a478746c074207b6dc96aa8771f04a606deb1ef))
+* require Node 8 ([5670e68](https://github.com/ionic-team/ionic-cli/commit/5670e68eafb4b6ba2e60b6120e836931508c03a5))
+
+
+### Features
+
+* **replace:** add replace item in array by index function ([011ddf7](https://github.com/ionic-team/ionic-cli/commit/011ddf76f72d9c74cdcf507d1296d092f7170ef7))
+* **splice:** add non-mutating splice function ([758d287](https://github.com/ionic-team/ionic-cli/commit/758d28732bb803f57245467dc71f450c6d921105))
+* add new `move` function ([ba8da3b](https://github.com/ionic-team/ionic-cli/commit/ba8da3b4382dbd89653128eac03fcff176681371))
+
+
+### BREAKING CHANGES
+
+* A minimum of Node.js 10.3.0 is required.
+* A minimum of Node.js 8.9.4 is required.
+
+
+
+
+
 ## [2.1.6](https://github.com/ionic-team/ionic-cli/compare/@ionic/utils-array@2.1.5...@ionic/utils-array@2.1.6) (2023-03-29)
 
 **Note:** Version bump only for package @ionic/utils-array

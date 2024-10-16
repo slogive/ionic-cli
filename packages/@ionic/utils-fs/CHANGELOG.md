@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 4.0.0 (2024-10-16)
+
+
+### Bug Fixes
+
+* pin tslib to avoid "Cannot set property pathExists" error ([689e1f0](https://github.com/ionic-team/ionic-cli/commit/689e1f038b907356ef855a067a76d4822e7072a8))
+* **fileToString:** handle ENOTDIR errors ([fab07d8](https://github.com/ionic-team/ionic-cli/commit/fab07d8c6e3d6756d633ada4c81165d11c70eb8f))
+* **walk:** stat symlinks themselves while walking ([92f2cee](https://github.com/ionic-team/ionic-cli/commit/92f2cee1297527143f9d15faff2e26dd5b829708))
+* rimraf is a full dependency ([962ad94](https://github.com/ionic-team/ionic-cli/commit/962ad9417572aca603feae93f7277048b6b066fa))
+
+
+### chore
+
+* require Node 10 ([5a47874](https://github.com/ionic-team/ionic-cli/commit/5a478746c074207b6dc96aa8771f04a606deb1ef))
+* require Node 8 ([5670e68](https://github.com/ionic-team/ionic-cli/commit/5670e68eafb4b6ba2e60b6120e836931508c03a5))
+
+
+### Features
+
+* **fs:** `onError` option for `readdirp` and `getFileTree` ([90bcfcd](https://github.com/ionic-team/ionic-cli/commit/90bcfcd65392bd9e51c1c682ded7b30f6174ea0e))
+* **fs:** `onFileNode` and `onDirectoryNode` options for `getFileTree` ([1858e96](https://github.com/ionic-team/ionic-cli/commit/1858e96e28ec1dc41475db4cf5d0f3f8800c7e41))
+* **fs:** add `getFileTree` for creating file tree object structures ([c14b46b](https://github.com/ionic-team/ionic-cli/commit/c14b46b16404953380e0c6d2f67763013ea68d92))
+* **fs:** add `isExecutableFile` utility ([53d9626](https://github.com/ionic-team/ionic-cli/commit/53d962676d180d4b33ef50a685325545a907b4fe))
+* **fs:** add `pathReadable`, `pathWritable`, and `pathExecutable` ([5412791](https://github.com/ionic-team/ionic-cli/commit/54127916e9778a45f98aaa9adf3c45213b1f0e9d))
+* switch to fs-extra ([c17d8d8](https://github.com/ionic-team/ionic-cli/commit/c17d8d8b19fb6974bb5acaac15d54e4a30b4ee05))
+
+
+### BREAKING CHANGES
+
+* A minimum of Node.js 10.3.0 is required.
+* A minimum of Node.js 8.9.4 is required.
+* `readDir`, `readDirp`, `readDirSafe` were renamed to be
+consistent with fs and fs-extra. `readJsonFile` and `writeJsonFile` have
+been renamed to `readJson` and `writeJson` and use the fs-extra version
+directly. `isDir` was removed (use stat). `copyFile` and `copyDirectory`
+were removed (use `copy`). `removeDirectory` was removed (use `remove`).
+
+
+
+
+
 ## [3.1.7](https://github.com/ionic-team/ionic-cli/compare/@ionic/utils-fs@3.1.6...@ionic/utils-fs@3.1.7) (2023-03-29)
 
 **Note:** Version bump only for package @ionic/utils-fs

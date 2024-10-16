@@ -3,6 +3,173 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 8.0.0 (2024-10-16)
+
+
+
+## 1.0.1 (2024-10-16)
+
+
+### Bug Fixes
+
+* live reload deploys app when warnings are present [#4807](https://github.com/ionic-team/ionic-cli/issues/4807) ([#5043](https://github.com/ionic-team/ionic-cli/issues/5043)) ([ef5706e](https://github.com/ionic-team/ionic-cli/commit/ef5706ed5e7ef347280320a88b5604a279667184))
+* **cli:** resolve vm2 security vulnerability ([#5070](https://github.com/ionic-team/ionic-cli/issues/5070)) ([4050419](https://github.com/ionic-team/ionic-cli/commit/4050419bef70fb92e58b0a83cd4b68b48090e596))
+* deploy manifest error if no capacitor CLI ([#4940](https://github.com/ionic-team/ionic-cli/issues/4940)) ([f586a18](https://github.com/ionic-team/ionic-cli/commit/f586a18805ead288850f18d8981db4f0ad8848ed))
+* state should not be required on OAuth Response ([#4995](https://github.com/ionic-team/ionic-cli/issues/4995)) ([c053cb3](https://github.com/ionic-team/ionic-cli/commit/c053cb3394acec5402d2ea436796775d67c98d39))
+* update test to reflect new output ([#4967](https://github.com/ionic-team/ionic-cli/issues/4967)) ([5c23518](https://github.com/ionic-team/ionic-cli/commit/5c23518b1a7bda4f020a82ced5557e157ccdbbc7))
+* use native ES2022 error cause ([#5010](https://github.com/ionic-team/ionic-cli/issues/5010)) ([d19f28e](https://github.com/ionic-team/ionic-cli/commit/d19f28e3f41b8f0248c11c49b7006754bb315218))
+* use native ES2022 error cause ([#5010](https://github.com/ionic-team/ionic-cli/issues/5010)) ([0c4cd0f](https://github.com/ionic-team/ionic-cli/commit/0c4cd0f47e00b43e8c0ce4eef072351a846b566c))
+* **angular:** always provide the project name fallback ([#4349](https://github.com/ionic-team/ionic-cli/issues/4349)) ([c498f59](https://github.com/ionic-team/ionic-cli/commit/c498f598dac54e8050f041401648efba0597ec3a))
+* **angular:** convert `--no-<opt>` to `--<opt>=false` for ng ([176ff4b](https://github.com/ionic-team/ionic-cli/commit/176ff4b960c883950f7247120f776ee110816f88))
+* **appflow:** allow download of packages built from branches with  in the name. CT-434 ([#4622](https://github.com/ionic-team/ionic-cli/issues/4622)) ([0054fd5](https://github.com/ionic-team/ionic-cli/commit/0054fd51706c071ffad98bf04ee053266bc780d1))
+* **appflow:** allow personal accounts to install enterprise packages ([#4681](https://github.com/ionic-team/ionic-cli/issues/4681)) ([97b0ee5](https://github.com/ionic-team/ionic-cli/commit/97b0ee5fa4432f965eabd38089681045dd3a4d5c))
+* **appflow:** Default should be all available not hard-coded by platform ([#4645](https://github.com/ionic-team/ionic-cli/issues/4645)) ([6e66109](https://github.com/ionic-team/ionic-cli/commit/6e66109d4993ddb24882bd5c5875a31b2fe65cff))
+* **appflow:** fix an issue where a network connectivity issue could c… ([#4520](https://github.com/ionic-team/ionic-cli/issues/4520)) ([8634fde](https://github.com/ionic-team/ionic-cli/commit/8634fde68bdfa8f4af724e4a86bb285c44924f37))
+* **appflow:** fix deploy manifest for Capacitor 1.x apps ([#4648](https://github.com/ionic-team/ionic-cli/issues/4648)) ([77b02a3](https://github.com/ionic-team/ionic-cli/commit/77b02a39d08fb369c6b95b5f3b0c255370e9fc23))
+* **Appflow:** fix bug where appflow build would fail to copy IPA/APK if tmp dir was mounted on a different filesystem ([#4578](https://github.com/ionic-team/ionic-cli/issues/4578)) ([65c740d](https://github.com/ionic-team/ionic-cli/commit/65c740d8ef3195e63d026ac229b7fe8bf1187da6))
+* **Appflow:** Fix issue with deploy add and deploy configure commands where sometimes necessary variables weren't correctly set. ([#4634](https://github.com/ionic-team/ionic-cli/issues/4634)) ([be6cf2e](https://github.com/ionic-team/ionic-cli/commit/be6cf2e05957b38c35dd692a3917c22c262e5e71))
+* **Appflow:** fixes bug when a build that gets cancelled on the dashboard is not recognized as a final state in the CLI ([#4598](https://github.com/ionic-team/ionic-cli/issues/4598)) ([51eab00](https://github.com/ionic-team/ionic-cli/commit/51eab00105a7616df869cd82eea54f1a55b7ab44))
+* **capacitor:** allow cleartext for Android live-reload ([#4308](https://github.com/ionic-team/ionic-cli/issues/4308)) ([4d13261](https://github.com/ionic-team/ionic-cli/commit/4d132615fdac01af93404ff939a3364d6f72fb6e))
+* **capacitor:** check for capacitor.config.json before integrating ([2d7992c](https://github.com/ionic-team/ionic-cli/commit/2d7992cf2093e671a4d10243bf959a2e0f917b60))
+* **capacitor:** do not open browser with `ionic cap run` ([8e3908d](https://github.com/ionic-team/ionic-cli/commit/8e3908d35ba99289e64a268c8a747054afceed92))
+* **capacitor:** Error if no emulators or devices are found on run ([#4931](https://github.com/ionic-team/ionic-cli/issues/4931)) ([7ec24c0](https://github.com/ionic-team/ionic-cli/commit/7ec24c04043b760ff9940d24c9ac281dce3aa21f))
+* **capacitor:** forward --inline to Capacitor CLI on copy and sync ([#4928](https://github.com/ionic-team/ionic-cli/issues/4928)) ([f5f75fa](https://github.com/ionic-team/ionic-cli/commit/f5f75fa27cffee37571813a2827cfc02baf0cb9a))
+* **capacitor:** Make add use latest instead of next ([#4700](https://github.com/ionic-team/ionic-cli/issues/4700)) ([04be661](https://github.com/ionic-team/ionic-cli/commit/04be661d9ec48960428aa65987c21a5f2bd6951b))
+* **capacitor:** Match platform version with CLI version ([#4829](https://github.com/ionic-team/ionic-cli/issues/4829)) ([9846d46](https://github.com/ionic-team/ionic-cli/commit/9846d467e926e76232826175d3d0d50c00b1ef1f))
+* **capacitor:** remove extra logging ([6cebf63](https://github.com/ionic-team/ionic-cli/commit/6cebf631dc3ab2b683da2a9a8fd24787504b88ae))
+* **capacitor:** restore capacitor config after livereload ([cdc0190](https://github.com/ionic-team/ionic-cli/commit/cdc0190eaef38f5a5f1dad79c0953bfd8fa08c57))
+* **capacitor:** use correct root when checking platforms ([e243357](https://github.com/ionic-team/ionic-cli/commit/e2433573bae66210d7ef29d6a2c170faa8abe408))
+* **cli:** capacitor commands not working ([#4918](https://github.com/ionic-team/ionic-cli/issues/4918)) ([27b958b](https://github.com/ionic-team/ionic-cli/commit/27b958bdf22c37f962d705a1b8ba1fee78b59c42))
+* **cli:** capacitor config not being read from multi-project directories ([#4909](https://github.com/ionic-team/ionic-cli/issues/4909)) ([0ab4881](https://github.com/ionic-team/ionic-cli/commit/0ab4881736f0d3b967d12802cb9cd01ba24d2088))
+* **cli:** capacitor recognize multi-project ([#4937](https://github.com/ionic-team/ionic-cli/issues/4937)) ([553ea79](https://github.com/ionic-team/ionic-cli/commit/553ea794f916f17db131d359caba9b6c1b31b919))
+* **cli:** Deprecate doctor and lab commands ([#4945](https://github.com/ionic-team/ionic-cli/issues/4945)) ([6fcf882](https://github.com/ionic-team/ionic-cli/commit/6fcf882b9ee9c31fcea38a6390b3c181c4df5ca6))
+* **cli:** ionic info returns package information ([#4991](https://github.com/ionic-team/ionic-cli/issues/4991)) ([2dd9136](https://github.com/ionic-team/ionic-cli/commit/2dd9136bb85375b03883105d04d1c1bb090d884d)), closes [#4992](https://github.com/ionic-team/ionic-cli/issues/4992)
+* **cli:** native solution preview should no longer be hidden ([#4962](https://github.com/ionic-team/ionic-cli/issues/4962)) ([a2eb4b2](https://github.com/ionic-team/ionic-cli/commit/a2eb4b2cf46e0f2004c1850acfdeada46fb211b5))
+* **integrations:** Move ng add @ionic/cordova-builders after package installs ([#4853](https://github.com/ionic-team/ionic-cli/issues/4853)) ([8a69ae0](https://github.com/ionic-team/ionic-cli/commit/8a69ae0fd7d7fc15a0d1d5107199299117d34af4))
+* **vue:** pass extra args to vue-cli serve ([#4827](https://github.com/ionic-team/ionic-cli/issues/4827)) ([87a0dcd](https://github.com/ionic-team/ionic-cli/commit/87a0dcdfd9f75b91e83c0eb13761d6135b226212))
+* Add status-bar to plugins installed on capacitor integration ([#4701](https://github.com/ionic-team/ionic-cli/issues/4701)) ([7c49d5c](https://github.com/ionic-team/ionic-cli/commit/7c49d5cdd717a05eff2e2f2d1fc5f209fd450f43))
+* numeric app names dont crash adding capacitor ([#4709](https://github.com/ionic-team/ionic-cli/issues/4709)) ([e13a4c5](https://github.com/ionic-team/ionic-cli/commit/e13a4c5ebccc79a85334968854688df9ada4b150))
+* Pin @types/superagent version to avoid build problems ([#4802](https://github.com/ionic-team/ionic-cli/issues/4802)) ([bdf5b05](https://github.com/ionic-team/ionic-cli/commit/bdf5b05833b92471f4ac5ba24437a8131adbf2e1))
+* Remove serve options from cap run command ([#4736](https://github.com/ionic-team/ionic-cli/issues/4736)) ([75e635b](https://github.com/ionic-team/ionic-cli/commit/75e635b6431d186a79ab5ad685ca10798120e38f))
+* revert the change to update the lock file when the --no-deps flag is used and issue a warning instead ([#4713](https://github.com/ionic-team/ionic-cli/issues/4713)) ([96ba8b4](https://github.com/ionic-team/ionic-cli/commit/96ba8b40a24a8ba4e4bcfb84aa972e77220fb3d4))
+* support Capacitor 1 apps ([#4758](https://github.com/ionic-team/ionic-cli/issues/4758)) ([0ca282b](https://github.com/ionic-team/ionic-cli/commit/0ca282b615e52867b1cbf263d08472878083f34f))
+* Update superagent-proxy dependency to v3 ([#4779](https://github.com/ionic-team/ionic-cli/issues/4779)) ([f153355](https://github.com/ionic-team/ionic-cli/commit/f153355324a958389f8414d72caa41035ec8bd98))
+* **cordova:** handle new format of output.json files for Android builds ([#4470](https://github.com/ionic-team/ionic-cli/issues/4470)) ([689b886](https://github.com/ionic-team/ionic-cli/commit/689b886a4a1395aa8bf3c6b0da21bde4a41e0de1))
+* **cordova:** handle output-metadata.json files during android run ([5905cc1](https://github.com/ionic-team/ionic-cli/commit/5905cc1a9cd75b1a2bb8343da2fbc7146322ad28))
+* **cordova:** load config.xml after serve/build hooks ([9867ada](https://github.com/ionic-team/ionic-cli/commit/9867adafbdd200712a35b38d39c54af6f809c987))
+* **cordova:** make sure build is complete before reading output.json ([f1abe83](https://github.com/ionic-team/ionic-cli/commit/f1abe8392a6f2eaf910d23558b26228affd467bb))
+* **cordova:** platform is a required input ([1bd3087](https://github.com/ionic-team/ionic-cli/commit/1bd30874f46d89248193c959dd8d769dd99503cf))
+* **cordova:** use integration root path for file read ([79dc0b1](https://github.com/ionic-team/ionic-cli/commit/79dc0b10a9ff68e0b4a29e826ef95891b0129b8e))
+* **cordova:** use output.json to deploy correct apk ([#4377](https://github.com/ionic-team/ionic-cli/issues/4377)) ([3f09331](https://github.com/ionic-team/ionic-cli/commit/3f09331daa38f1ebe9eae79831e9d1fe7f28c1a2))
+* **cordova:** use relative path for ipa files ([4831758](https://github.com/ionic-team/ionic-cli/commit/4831758ed12982a1dd4a4cd30f447a304abc4140))
+* **link:** fix GitHub OAuth URL on WSL ([#4442](https://github.com/ionic-team/ionic-cli/issues/4442)) ([93c5bf5](https://github.com/ionic-team/ionic-cli/commit/93c5bf5ba0cc0549a4bf61f534ee30d465bfe35e))
+* **multi-app:** use proper paths for integration root ([d53cee3](https://github.com/ionic-team/ionic-cli/commit/d53cee3def8dab8dd3e76c643d73c7c134b327fa))
+* **package:** fix name of the package deploy name ([#4435](https://github.com/ionic-team/ionic-cli/issues/4435)) ([6f6f9d7](https://github.com/ionic-team/ionic-cli/commit/6f6f9d7540fc064b3ffcbc05b56441f9b5c2efeb))
+* **react:** accept environment variables into build process ([0932ff0](https://github.com/ionic-team/ionic-cli/commit/0932ff04f45633e51b1d4b78857dbecedaee0c45))
+* **react:** fix stdin to unblock react-scripts>3.4.0 ([#4609](https://github.com/ionic-team/ionic-cli/issues/4609)) ([47631f5](https://github.com/ionic-team/ionic-cli/commit/47631f5a9331f3bc428933da68c82176221746c6))
+* **start:** do not prompt for project type when cloning ([#4427](https://github.com/ionic-team/ionic-cli/issues/4427)) ([4ff1622](https://github.com/ionic-team/ionic-cli/commit/4ff162281e327b4740e92513925b6d37b9dfb71e))
+* **vue:** pass extra args to vue-cli ([56dd8a7](https://github.com/ionic-team/ionic-cli/commit/56dd8a7fe94d764bac63a41d35e0b709a2dde893)), closes [#4669](https://github.com/ionic-team/ionic-cli/issues/4669) [#4642](https://github.com/ionic-team/ionic-cli/issues/4642) [#4642](https://github.com/ionic-team/ionic-cli/issues/4642)
+* pin tslib to avoid "Cannot set property pathExists" error ([689e1f0](https://github.com/ionic-team/ionic-cli/commit/689e1f038b907356ef855a067a76d4822e7072a8))
+* updated `ionic start` to update lock files when the --no-deps arg is passed ([#4706](https://github.com/ionic-team/ionic-cli/issues/4706)) ([868e61d](https://github.com/ionic-team/ionic-cli/commit/868e61d70c54023e39896b677ceac331b0606167))
+* use inline uuid v4 function ([#4501](https://github.com/ionic-team/ionic-cli/issues/4501)) ([3743d7b](https://github.com/ionic-team/ionic-cli/commit/3743d7b3e01166dd70716558d55a500419a8bb13))
+* use pnpm if configured in build/serve commands ([#4459](https://github.com/ionic-team/ionic-cli/issues/4459)) ([174985f](https://github.com/ionic-team/ionic-cli/commit/174985fca87322d4b52929ae44e93f639665bdf8))
+* **start:** fix issue with starting the react conf app ([daf1f72](https://github.com/ionic-team/ionic-cli/commit/daf1f72372ca3966c57c7e32adc38001cf3a5fdb))
+* **update:** show update message even with command error ([6f32ebc](https://github.com/ionic-team/ionic-cli/commit/6f32ebc7f07f8bdd39ee538c9d605945c4a8e03e))
+
+
+### chore
+
+* **appflow:** remove appflow from @ionic/cli ([#4777](https://github.com/ionic-team/ionic-cli/issues/4777)) ([34b07ad](https://github.com/ionic-team/ionic-cli/commit/34b07ad4b53130057ecc5a736036a87d582744c2))
+* rename Ionic CLI package to `@ionic/cli` ([1f86b34](https://github.com/ionic-team/ionic-cli/commit/1f86b34dc4ebfd565c240a6b4a44f3815a18b769))
+
+
+### Code Refactoring
+
+* **docs:** remove ionic docs command ([#4969](https://github.com/ionic-team/ionic-cli/issues/4969)) ([e624258](https://github.com/ionic-team/ionic-cli/commit/e62425889d07b496c0e578b61413ab00a8dae8d3))
+* **doctor:** remove ionic doctor command ([#4959](https://github.com/ionic-team/ionic-cli/issues/4959)) ([13568b1](https://github.com/ionic-team/ionic-cli/commit/13568b138bb8007e91901820656e97ac121a4913))
+* **lab:** remove ionic serve --lab option ([#4960](https://github.com/ionic-team/ionic-cli/issues/4960)) ([d6512a5](https://github.com/ionic-team/ionic-cli/commit/d6512a5139943dbe2084f99e63075db6e6b15b4d))
+
+
+### Features
+
+* **angular:** support angulars vite dev server ([#5064](https://github.com/ionic-team/ionic-cli/issues/5064)) ([8a94434](https://github.com/ionic-team/ionic-cli/commit/8a94434a413c1b60b0e88904064edfe7a98206ab))
+* **cli:** now support bun ([01648d1](https://github.com/ionic-team/ionic-cli/commit/01648d12782788d30987248b1c2181d89f8bfc52))
+* **cli:** now support bun ([45bbb45](https://github.com/ionic-team/ionic-cli/commit/45bbb452c209bea11be82b0448699002a562dacf))
+* add `capacitor:run:before` and `capacitor:build:before` hooks ([#4417](https://github.com/ionic-team/ionic-cli/issues/4417)) ([28d8540](https://github.com/ionic-team/ionic-cli/commit/28d854041d418fdd4c36233eb47af177506fdbaf))
+* add `capacitor:sync:after` hook ([#4496](https://github.com/ionic-team/ionic-cli/issues/4496)) ([c63d4e1](https://github.com/ionic-team/ionic-cli/commit/c63d4e1957f36549142275c11f7198c68874cef1))
+* add standalone as an option ([#5005](https://github.com/ionic-team/ionic-cli/issues/5005)) ([707a42d](https://github.com/ionic-team/ionic-cli/commit/707a42d29579a355d9a57b65c07ec6a0b681028e))
+* add vite support for react and vue ([#4966](https://github.com/ionic-team/ionic-cli/issues/4966)) ([94e9fa2](https://github.com/ionic-team/ionic-cli/commit/94e9fa2a2146883ad857d2acad71b7605e3687d0))
+* Add web based GUI start wizard to ionic start command ([#4746](https://github.com/ionic-team/ionic-cli/issues/4746)) ([c0669a9](https://github.com/ionic-team/ionic-cli/commit/c0669a9d48b3728c485aa19a2d55fedbe582d121))
+* Cap is no longer experimental and is default for Angular ([#4745](https://github.com/ionic-team/ionic-cli/issues/4745)) ([d81e08b](https://github.com/ionic-team/ionic-cli/commit/d81e08bee0e2495c97b984dcc69f95c00ade31ab))
+* remove ionic-angular project type ([ff1c936](https://github.com/ionic-team/ionic-cli/commit/ff1c93635a74fc26e57319123118eaf3ce6d9958))
+* remove ionicv1 project type ([6ea2d48](https://github.com/ionic-team/ionic-cli/commit/6ea2d48da10d2b964ab95961cc9600874279c59d))
+* remove v3 and v1 integrations ([d40da3d](https://github.com/ionic-team/ionic-cli/commit/d40da3d07da909f82807fe7182c035c69d20a65c))
+* support vue projects ([#4515](https://github.com/ionic-team/ionic-cli/issues/4515)) ([ad6c483](https://github.com/ionic-team/ionic-cli/commit/ad6c483bd59b4f5e70acac22f456b0b062f4d39c))
+* use vite specific projects for starters ([#4970](https://github.com/ionic-team/ionic-cli/issues/4970)) ([f35ea72](https://github.com/ionic-team/ionic-cli/commit/f35ea7239d5b23f819084691480f1c791377d55f))
+* **appflow:** add flag for skipping artifact download after builds succeed ([#4678](https://github.com/ionic-team/ionic-cli/issues/4678)) ([d87c6f2](https://github.com/ionic-team/ionic-cli/commit/d87c6f28a34c668349868f8214346ff07398c820))
+* **appflow:** deprecate appflow functionality in @ionic/cli ([#4776](https://github.com/ionic-team/ionic-cli/issues/4776)) ([6a39641](https://github.com/ionic-team/ionic-cli/commit/6a39641555c9247cc53091db5afde73f9b1d3e34))
+* **appflow:** support Capacitor only apps with `ionic deploy manifest` ([#4641](https://github.com/ionic-team/ionic-cli/issues/4641)) ([cee620b](https://github.com/ionic-team/ionic-cli/commit/cee620baff2515115393d882b88f6a99e3fefd9b))
+* **appflow:** Support downloading all artifact types from appflow builds ([cae11db](https://github.com/ionic-team/ionic-cli/commit/cae11dba3f1efbec753ae6e91c21ad79be169e38))
+* **appflow:** Support downloading WWW_ZIP after deploy build ([bce15d1](https://github.com/ionic-team/ionic-cli/commit/bce15d1b57a102938d4e6922773fe27af24dcca7))
+* **capacitor:** add `--no-open` option for run and build ([#4403](https://github.com/ionic-team/ionic-cli/issues/4403)) ([977811e](https://github.com/ionic-team/ionic-cli/commit/977811e652f96aa4f5b4de92a80d9c25ae693d15))
+* **capacitor:** capacitor 3 support ([#4610](https://github.com/ionic-team/ionic-cli/issues/4610)) ([359cdec](https://github.com/ionic-team/ionic-cli/commit/359cdec031f3c3484093e9fee65e06ef866cfd8b)), closes [#4690](https://github.com/ionic-team/ionic-cli/issues/4690)
+* **capacitor:** enable NSAppTransportSecurity settings for live reload if needed ([#4851](https://github.com/ionic-team/ionic-cli/issues/4851)) ([24e22a6](https://github.com/ionic-team/ionic-cli/commit/24e22a60d17709ff78563a796db01e69b6d641cb))
+* **capacitor:** perform Ionic for copy and sync ([be42aee](https://github.com/ionic-team/ionic-cli/commit/be42aee601e7abb0fd2f0b3957d561e26b0c688f))
+* **capacitor:** warn about server.url during capacitor builds ([5f6b5dd](https://github.com/ionic-team/ionic-cli/commit/5f6b5dd46e0206c7de51a518a1e463a921d85217))
+* **cli:** allow cap electron commands ([#4854](https://github.com/ionic-team/ionic-cli/issues/4854)) ([46da22f](https://github.com/ionic-team/ionic-cli/commit/46da22ff5b89c66155829a307acd765c5ff957d0))
+* **config:** add `delete` and `del` aliases for `ionic config unset` ([56295c2](https://github.com/ionic-team/ionic-cli/commit/56295c2641cadd350c780db0e559a4bac49a0112))
+* **config:** make project file configurable ([43ba45c](https://github.com/ionic-team/ionic-cli/commit/43ba45c134abae3279dd8776bd667b7dd9c002a7))
+* **cordova:** add `cdv` alias for `ionic cordova` ([ea503b7](https://github.com/ionic-team/ionic-cli/commit/ea503b7c5580fe449b10a1e11a40179375dfa1e9))
+* **cordova:** add `res` alias for `ionic cordova resources` ([2d6ec39](https://github.com/ionic-team/ionic-cli/commit/2d6ec39243752abed92eaa6f3be56460d2b40bf4))
+* **init:** add --multi-app option to init monorepos ([42c5199](https://github.com/ionic-team/ionic-cli/commit/42c51996632cdbc6ad6e514f36a584e3a450e380))
+* **integrations:** add ng add cordova-builder ([#4823](https://github.com/ionic-team/ionic-cli/issues/4823)) ([de8d028](https://github.com/ionic-team/ionic-cli/commit/de8d028f54199ddd59aed6636378e4829875a0cd))
+* **link:** Link bug fix and git selection changes ([#4689](https://github.com/ionic-team/ionic-cli/issues/4689)) ([942e965](https://github.com/ionic-team/ionic-cli/commit/942e96576f17b9958d4fe0be680235bc22ecbd32))
+* **login:** default to browser login ([#4451](https://github.com/ionic-team/ionic-cli/issues/4451)) ([0738abd](https://github.com/ionic-team/ionic-cli/commit/0738abd4123b6b5e078cd7ff2f76ed1a26474cf0))
+* **package:** add functionality to deploy to app store ([#4366](https://github.com/ionic-team/ionic-cli/issues/4366)) ([cdd87ac](https://github.com/ionic-team/ionic-cli/commit/cdd87ac795f22d82401f79abb97bef65d8dd1e33))
+* **package:** deployments to destinations (e.g. app stores) ([#4418](https://github.com/ionic-team/ionic-cli/issues/4418)) ([f0314f6](https://github.com/ionic-team/ionic-cli/commit/f0314f64a0a992c6bba9bb46343c1679b8b6521e))
+* `ionic capacitor build` command ([#4254](https://github.com/ionic-team/ionic-cli/issues/4254)) ([906fa96](https://github.com/ionic-team/ionic-cli/commit/906fa96ddca7e0156f22d94af3029b29306a6d3a))
+* **integrations:** add `dis`, `delete`, `del`, `remove`, and `rm` aliases for `ionic integrations disable` ([fd33cb3](https://github.com/ionic-team/ionic-cli/commit/fd33cb3d0b32520d609850cab83cbba3c767c7e4))
+* **integrations:** add `en` and `add` aliases for `ionic integrations enable` ([b85b5f9](https://github.com/ionic-team/ionic-cli/commit/b85b5f9d4c76e877d126e7185459589d73deb529))
+* **integrations:** add `integration` alias for `ionic integrations` ([a9bf5a1](https://github.com/ionic-team/ionic-cli/commit/a9bf5a16c95f0a5760179d5b9db569242d6a12a5))
+* **serve:** -c as alias for --configuration for Angular projects ([c010f37](https://github.com/ionic-team/ionic-cli/commit/c010f375dc8f1d7bc93cb313729f92d4d905a3cc))
+* **serve:** add `--public-host` option ([#4331](https://github.com/ionic-team/ionic-cli/issues/4331)) ([8ae752d](https://github.com/ionic-team/ionic-cli/commit/8ae752d60de69063c752870f96a617a270316ca7))
+* **start:** add new list starter option ([#4315](https://github.com/ionic-team/ionic-cli/issues/4315)) ([1df44c1](https://github.com/ionic-team/ionic-cli/commit/1df44c1591f37b89f2b672857740edd6cb2aea67))
+* **start:** add signup prompt ([#4338](https://github.com/ionic-team/ionic-cli/issues/4338)) ([1f23b66](https://github.com/ionic-team/ionic-cli/commit/1f23b662c05114d1645b6f3ab2678e54d517b324))
+* **start:** Default to Capacitor for React ([#4383](https://github.com/ionic-team/ionic-cli/issues/4383)) ([3fd72ec](https://github.com/ionic-team/ionic-cli/commit/3fd72ec828a1a30ddb8439bb9c7123bdcc88e46a))
+* **start:** icon/splash from start wizard ([#4376](https://github.com/ionic-team/ionic-cli/issues/4376)) ([bb4c12b](https://github.com/ionic-team/ionic-cli/commit/bb4c12b569685dad228ff7a5588a19ba22c06278))
+* **start:** online start experience ([#4356](https://github.com/ionic-team/ionic-cli/issues/4356)) ([fcc5a75](https://github.com/ionic-team/ionic-cli/commit/fcc5a75a11291d069dae123b9d331ecae2d2ac2a))
+* add support for pnpm ([#4330](https://github.com/ionic-team/ionic-cli/issues/4330)) ([47bf076](https://github.com/ionic-team/ionic-cli/commit/47bf076427f3c5d36e241b85cacf30b23f2efd24))
+* **start:** update "my-first-app" to use Capacitor for Angular and React ([#4307](https://github.com/ionic-team/ionic-cli/issues/4307)) ([de350a7](https://github.com/ionic-team/ionic-cli/commit/de350a757078515a94ebbac3cf45b915970345f7))
+
+
+### Reverts
+
+* use native ES2022 error cause ([#5060](https://github.com/ionic-team/ionic-cli/issues/5060)) ([1e64a1a](https://github.com/ionic-team/ionic-cli/commit/1e64a1ada60545adf8e7c99fbd1f8766cf2416f9))
+
+
+### BREAKING CHANGES
+
+* **appflow:** The `package` commands and the `deploy build` command have been removed. Developers should migrate to the Ionic Cloud CLI instead. 
+- Using `deploy build`? Migrate to ionic-cloud build web and if you used the -channel option, also use ionic-cloud deploy web.
+- Using `package` commands? Migrate to ionic-cloud build and ionic-cloud deploy.
+
+See https://ionic.io/docs/appflow/cli/overview for more information on the Ionic Cloud CLI.
+* **docs:** The `ionic docs` command has been removed. See https://github.com/ionic-team/ionic-cli/pull/4905 for an alternative.
+* **doctor:** The `ionic doctor` command has been removed. See https://github.com/ionic-team/ionic-cli/pull/4907 for alternatives.
+* **lab:** The `--lab` option has been removed from `ionic serve`. See https://ionicframework.com/docs/developing/previewing for alternatives.
+* This commit removes integrations with V1 and V3 Ionic
+project types
+* This commit removes the Ionic V1 project type from the
+available project integrations. Please migrate to a modern Ionic
+project.
+* Integration with V3 (aka ionic-angular) project has
+been removed. Please update to modern Ionic projects.
+* The npm package for the Ionic CLI is now `@ionic/cli`.
+
+
+
+
+
 # [7.2.0](https://github.com/ionic-team/ionic-cli/compare/@ionic/cli@7.1.6...@ionic/cli@7.2.0) (2024-01-02)
 
 
